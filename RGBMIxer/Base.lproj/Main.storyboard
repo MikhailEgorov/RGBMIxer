@@ -72,6 +72,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dhg-rd-N5o">
                                 <rect key="frame" x="111" y="289" width="285" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" systemColor="systemRedColor"/>
                                 <connections>
                                     <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="bGK-90-GUf"/>
@@ -80,6 +81,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cEE-2U-R9L">
                                 <rect key="frame" x="111" y="340" width="285" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" systemColor="systemGreenColor"/>
                                 <connections>
                                     <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="oyr-xQ-kgn"/>
@@ -88,6 +90,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hGz-Ss-UVs">
                                 <rect key="frame" x="111" y="391" width="285" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" systemColor="systemBlueColor"/>
                                 <connections>
                                     <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="sja-wq-RBv"/>
