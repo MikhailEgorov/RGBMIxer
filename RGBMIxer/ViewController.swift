@@ -24,34 +24,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         screenColors.layer.cornerRadius = 10
         
-        //setupRedSlider
-        //redSlider.value = 0.00
-        
-        redSlider.minimumValue = 0
-        redSlider.maximumValue = 1
-        
-        //setupGreenSlider
-        greenSlider.value = 0
-        greenSlider.minimumValue = 0
-        greenSlider.maximumValue = 1
-        
-        //setupBlueSlider
-        blueSlider.value = 0
-        blueSlider.minimumValue = 0
-        blueSlider.maximumValue = 1
-        
+    }
+    private func rgbMixer () {
+        screenColors.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
 
     @IBAction func redSliderAction() {
         
         redValueLabel.text = String(format: "%.2f", redSlider.value)
+        rgbMixer()
     }
     
     @IBAction func greenSliderAction() {
         greenValueLabel.text = String(format: "%.2f",greenSlider.value)
+        rgbMixer()
     }
     @IBAction func blueSliderAction() {
         blueValueLabel.text = String(format: "%.2f",blueSlider.value)
+        rgbMixer()
     }
 }
 
