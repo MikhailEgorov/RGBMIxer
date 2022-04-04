@@ -23,25 +23,35 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         screenColors.layer.cornerRadius = 10
-        
-    }
-    private func rgbMixer () {
-        screenColors.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+        rgbMixer()
     }
 
     @IBAction func redSliderAction() {
         
-        redValueLabel.text = String(format: "%.2f", redSlider.value)
+        redValueLabel.text = string(from: redSlider)
         rgbMixer()
     }
     
     @IBAction func greenSliderAction() {
-        greenValueLabel.text = String(format: "%.2f",greenSlider.value)
+        greenValueLabel.text = string(from: greenSlider)
         rgbMixer()
     }
+    
     @IBAction func blueSliderAction() {
-        blueValueLabel.text = String(format: "%.2f",blueSlider.value)
+        blueValueLabel.text = string(from: blueSlider)
         rgbMixer()
+    }
+    
+    private func rgbMixer () {
+        screenColors.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1)
+    }
+    
+    private func string(from slider: UISlider) -> String {
+        String(format: "%.2f", slider.value)
     }
 }
 
